@@ -44,46 +44,46 @@ function update() {
 }
 
 
-const lines = document.querySelectorAll('.line');
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
-let currActive = 1;
+// const lines = document.querySelectorAll('.line');
+// const prevBtn = document.getElementById('prev');
+// const nextBtn = document.getElementById('next');
+// let currActive = 1;
 
-nextBtn.addEventListener('click', () => {
-  currActive++;
+// nextBtn.addEventListener('click', () => {
+//   currActive++;
 
-  if (currActive > lines.length) {
-    currActive = lines.length;
-  }
+//   if (currActive > lines.length) {
+//     currActive = lines.length;
+//   }
 
-  updateline();
-});
+//   updateline();
+// });
 
-prevButton.addEventListener('click', () => {
-  currActive--;
+// prevButton.addEventListener('click', () => {
+//   currActive--;
 
-  if (currActive < 1) {
-    currActive = 1;
-  }
+//   if (currActive < 1) {
+//     currActive = 1;
+//   }
 
-  updateline();
-});
+//   updateline();
+// });
 
-function updateline() {
-  lines.forEach((line, index) => {
-    if (index < currActive) {
-      line.classList.add('active');
-    } else {
-      line.classList.remove('active');
-    }
-  });
+// function updateline() {
+//   lines.forEach((line, index) => {
+//     if (index < currActive) {
+//       line.classList.add('active');
+//     } else {
+//       line.classList.remove('active');
+//     }
+//   });
 
-  if (currActive === 1) {
-    prevBtn.disabled = true;
-  } else if (currActive === lines.length) {
-    nextBtn.disabled = true;
-  } else {
-    prevBtn.disabled = false;
-    nextBtn.disabled = false;
-  }
-}
+//   if (currActive === 1) {
+//     prevBtn.disabled = true;
+//   } else if (currActive === lines.length) {
+//     nextBtn.disabled = true;
+//   } else {
+//     prevBtn.disabled = false;
+//     nextBtn.disabled = false;
+//   }
+// }
