@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+.sec {
+	background-color: #F6F7FB;
+	width: 800px;
+	height: 300px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.top {
+	display: flex;
+/* 	flex-flow: row wrap; */
+	justify-content: center;
+	align-items: center;
+}
+.number {
+	width: 40px;
+	height: 40px;
+	border: 3px solid #3498DB;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.line {
+	width: 50px;
+	border: 3px solid #3498DB;
+}
+.btn {
+	background-color: #3498DB;
+	color: white;
+	width: 100px;
+	padding: 13px;
+	margin: 8px;
+	border: none;
+	border-radius: 7px;
+	font-size : 16px;
+}
